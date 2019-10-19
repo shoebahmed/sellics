@@ -1,0 +1,10 @@
+version: "3"
+services:
+  sellics-microservice:
+    container_name: sellics-microservice
+    build: .
+    working_dir: /
+    volumes:
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"

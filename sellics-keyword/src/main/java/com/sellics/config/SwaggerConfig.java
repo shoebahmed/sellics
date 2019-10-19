@@ -51,7 +51,7 @@ public class SwaggerConfig {
   }
 
   private ApiInfo metaData() {
-    return new ApiInfo("GFG REST API", "GFG REST API.", "API TOS", "Terms of service",
+    return new ApiInfo("SELLICS REST API", "SELLICS REST API.", "API TOS", "Terms of service",
         new Contact("Shoeb Ahmed", "www.google.com", "shoebahmed@yahoo.com"), "License of API",
         "API license URL", Collections.emptyList());
   }

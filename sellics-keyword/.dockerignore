@@ -1,0 +1,8 @@
+.git
+.gitignore
+docker-compose*
+Dockerfile*
+src
+traget
+pom.xml
+README.md
