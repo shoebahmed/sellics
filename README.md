@@ -53,7 +53,7 @@ This assignment is prepared for Sellics. API to generate a score for keyword pas
   folder.
     
   
-  Build project with Maven, this command will also run integration test which need mongo database.
+  Build project with Maven, this command will also run integration test.
     
     mvn clean install
   
