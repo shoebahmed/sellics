@@ -14,26 +14,30 @@ This assignment is prepared for Sellics. API to generate a score for keyword pas
   I have used Spring Boot Microservice's to build keyword estimate API. Swagger is incorporated to quickly verify this application.  Java Google Coding standards is used to format code while developing.
 
   ##### Amazon Autocomplete API
-    As specified in assignment I have used Amazon Autocomplete API to generate scroe. As we know amazon returns only
-    top 10 results for the keyword being search. Which means, the keyword which is returned has 10 matching keyword,
-    has atleast 10 rank in AWS Keyword database. 
+    As specified in assignment I have used Amazon Autocomplete API to generate scroe. As we know Amazon
+    returns only top 10 results for the keyword being search. Which means, the keyword which is returned
+    has 10 matching keyword, has atleast 10 rank in AWS Keyword database. 
     
-    As a next step, I have prepared permutation or keyword's for example if you are searching for "iphone charger"
-    following are the 4 sets of possible combination
+    As a next step, I have prepared permutation or keyword's for example if you are searching for 
+    "iphone charger" following are the 4 sets of possible combination
        * iphone
        * charger
        * iphone+charger
        * charger+iphone
-    So 4 parallel calls are make to AWS Completion API and in response keyswords I check whether iphone or charger
-    is present. If present I increse the score by 1. 
     
-    Two return a healthy score, I have considered two keywords and added a offset score of 50. Please check the response
-    for "iphone charger" score of 72 is returned. 
+    So 4 parallel calls are make to AWS Completion API and in response keyswords I check whether 
+    iphone or charger is present. If present I increse the score by 1. 
+    
+    Two return a healthy score, I have considered two keywords and added a offset score of 50. 
+    This offset can be removed. Please check the response for "iphone charger" score of 72 is 
+    returned. 
  
 
 ### [Assumption](#assumption)
-    I have assumed to use basic Spring Boot to build this assignment. Due to time consideration, I was 
-    unable to write comments in Java file, but named variable and function to conveys its purpose. 
+    I have assumed to use basic Spring Boot to build this assignment. Due to time consideration, 
+    I was unable to write comments in Java file, but named variable and function to conveys 
+    its purpose. If response from AWS is not available or takes time, 0 score is returned after 
+    10 seconds. 
 
 ### [Ecosystem and Library](#ecosystem-and-library)
   Java 8
